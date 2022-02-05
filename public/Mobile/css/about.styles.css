@@ -1,0 +1,59 @@
+#about_section > #about_text {
+    background: #F5F5F5;
+    padding: 5px;
+}
+
+#about_section > #about_text > h1 {
+    /* 중앙 정렬 */
+    width: 200px; margin: 50px auto;
+    text-align: center;
+    
+    /* 수직 주앙 정렬 */
+    height: 70px;
+    line-height: 70px;
+
+    font-family: 'Rampart One', cursive;    
+    font-size: 40px;    
+    color: #6F5EA5;
+
+    background: white;
+}
+
+#about_section > #about_text > p.info {
+    text-align: center;
+
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 23px;
+}
+
+#about_section > #about_text > p.info:last-child {
+    margin-bottom: 80px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+#about_section > #about_button > a.button {
+    /* a 태그에 display 속성을 사용하여 클릭하는 영역을 확장한다. */
+    display: block;
+
+    /* a 태그를 버튼처럼 꾸민다. */
+    width: 90%; margin: 0 auto;
+    height: 67px;
+    background-color: #9E86E1;  
+    border: 10px solid #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #A9A9A9;
+
+    text-decoration: none;      /* 링크 밑줄 제거 */
+
+    margin-bottom: 50px;
+}
+
+#about_section > #about_button > a.button > p {
+    text-align: center;
+    line-height: 67px;
+
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 25px;    
+    color: white;
+}

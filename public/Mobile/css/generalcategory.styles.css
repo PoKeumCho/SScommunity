@@ -1,0 +1,249 @@
+#gc_new {
+    /* 중앙 정렬 */
+    width: 100%; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 5px solid #C599D7;
+    padding: 10px;
+}
+
+#gc_new > div.button_wrap { overflow: hidden; height: 44px; }
+
+#gc_new > div.button_wrap > div.button {
+    float: left;
+    width: 40%; height: 34px;
+    margin-left: 3px;
+    background-color: #A7C8DE;
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px #A9A9A9;
+}
+
+#gc_new > div.button_wrap > div.button > a { 
+    display: block; 
+    line-height: 34px; 
+    text-align: center;
+    color: black;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#gc_new > div.button_wrap > #add_gc_cancel_button_wrap { 
+    display: none; 
+    background-color: indianred;
+}
+#gc_new > div.button_wrap > div.button:last-child > a { color: floralwhite; }
+
+
+#gc_new > #add_gc_new {
+    width: 90%; margin: 0 auto; 
+    display: none;
+}
+#gc_new > #add_gc_new label { display: block; font-weight: bold; }
+#gc_new > #add_gc_new label:first-child { margin-top: 20px; }
+#gc_new > #add_gc_new input { 
+    display: block; 
+    height: 30px; width: 50%;
+    margin: 20px 0;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+#gc_new > #add_gc_new #gc_info,
+#gc_new > #add_gc_new #gc_hashtag {
+    width: 100%;
+}
+#gc_new > #add_gc_new #add_gc_submit { display: none; }
+
+
+#gc_new > #add_gc_new div.checkbox_wrap { overflow: hidden; }
+#gc_new > #add_gc_new div.checkbox_wrap > label { float: left; margin: 10px 0; height: 30px; line-height: 30px; }
+#gc_new > #add_gc_new div.checkbox_wrap > input { float: left; margin: 10px 15px; padding: 0; width: 23px; }
+
+#gc_new > #add_gc_new div.checkbox_wrap > #gc_expel_info {
+    color: red;
+    font-size: 0.75em;
+    float: left; 
+    margin: 10px 0;
+}
+
+#gc_new > div.button_wrap > #add_gc_errors {
+    float: left;
+    width: 55%; height: 39px;
+    margin-left: 3px;
+    background-color: lightyellow;
+}
+#gc_new > div.button_wrap > #add_gc_errors > p {
+    font-size: 0.7em;
+    text-align: center;
+    line-height: 39px;
+    color: red;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+#gc_search_wrap {
+    /* 중앙 정렬 */
+    width: 93%; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 5px solid #85D5EB;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#gc_search_wrap > form {
+    width: 85%; margin: 0 auto;
+    height: 33px;
+    position: relative;
+}
+
+#gc_search_wrap #gc_search { 
+    height: 30px; width: 87%;
+    margin-right: 10px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+
+#gc_search_wrap #gc_search_img_wrap { 
+    display: inline-block; 
+    position: absolute; bottom: 0; 
+}
+
+#gc_search_wrap #gc_search_submit { display: none; }
+
+/* IE img label for 클릭 안될 때 처리용 */
+#gc_search_wrap #gc_search_img_wrap > img { pointer-events: none; }
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+#gc_bookmark, 
+#gc_search_results {
+    /* 중앙 정렬 */
+    width: 100%; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 1px solid #D1D1D1;
+    margin-bottom: 15px;
+}
+
+#gc_bookmark > #gc_bookmark_list,
+#gc_search_results > div.ul {
+    /* 중앙 정렬 */
+    width: 100%; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 1px solid #D1D1D1;
+    padding: 10px;
+
+    overflow: hidden;
+}
+
+#gc_bookmark > #gc_bookmark_list > a,
+#gc_search_results > div.ul > div.li {
+    display: block;
+    box-sizing: border-box;
+    width: 42%; overflow: hidden;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+
+    float: left;
+    margin: 10px;
+}
+
+/* 방출 기능이 설정된 게시판은 빨간색으로 표시 */
+#gc_bookmark > #gc_bookmark_list > a.expel,
+#gc_search_results > div.ul > div.expel {
+    border-color: indianred;
+}
+
+#gc_bookmark > #gc_bookmark_list > a > div.left,
+#gc_search_results > div.ul > div.li > div.left {
+    box-sizing: border-box;
+    width: 60%; float: left;
+    height: 100%;
+    padding: 5px;
+    border-right: 1px solid black;
+}
+
+#gc_bookmark > #gc_bookmark_list > a > div.right,
+#gc_search_results > div.ul > div.li > div.right {
+    box-sizing: border-box;
+    width: 40%; float: left;
+    height: 100%;
+}
+
+#gc_bookmark > #gc_bookmark_list > a > div.right > div.top,
+#gc_search_results > div.ul > div.li > div.right > div.top {
+    box-sizing: border-box;
+    width: 100%; height: 65%;
+    border-bottom: 1px solid black;
+}
+#gc_bookmark > #gc_bookmark_list > a > div.right > div.bottom,
+#gc_search_results > div.ul > div.li > div.right > div.bottom {
+    box-sizing: border-box;
+    width: 100%; height: 35%;
+}
+
+#gc_bookmark > #gc_bookmark_list > a > div.left > p,
+#gc_search_results > div.ul > div.li > div.left > p {
+    font-size: 0.9em;
+    max-height: 48px;
+    overflow: hidden;
+}
+
+
+#gc_bookmark > #gc_bookmark_list > a > div.right > div.top input.remove_bookmark,
+#gc_search_results > div.ul > div.li > div.right > div.top input.add_bookmark { display: none; }
+
+#gc_bookmark > #gc_bookmark_list > a > div.right > div.top #remove_bookmark_img,
+#gc_search_results > div.ul > div.li > div.right > div.top #add_bookmark_img { 
+    display: block; margin: 0 auto;
+    padding-top: 5px;
+}
+
+#gc_bookmark > #gc_bookmark_list > a > div.right > div.bottom > p,
+#gc_search_results > div.ul > div.li > div.right > div.bottom > p {
+    font-size: 0.8em;
+    text-align: center; line-height: 20px;
+}
+
+/* IE img label for 클릭 안될 때 처리용 */
+#gc_bookmark > #gc_bookmark_list > a > div.right > div.top label,
+#gc_search_results > div.ul > div.li > div.right > div.top label { display: block; }
+#gc_bookmark > #gc_bookmark_list > a > div.right > div.top #remove_bookmark_img,
+#gc_search_results > div.ul > div.li > div.right > div.top #add_bookmark_img { pointer-events: none; }
+
+
+#gc_bookmark > #gc_bookmark_nav {
+    overflow: hidden;
+    /* 중앙 정렬 */
+    width: 100%; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 1px solid #D1D1D1;
+    padding: 10px;
+}
+
+#gc_bookmark > #gc_bookmark_nav > a {
+    display: block; float: left;
+    width: 22%; height: 40px;
+    text-align: center; line-height: 40px;
+    border: 2px solid darkred;
+    border-radius: 15px;
+    color: darkred; font-weight: bold;
+}
+
+#gc_bookmark > #gc_bookmark_nav > a.first { margin-right: 10px; }
+#gc_bookmark > #gc_bookmark_nav > a.right { float: right; }
+
+/* ------------------------------------------------------------------------------------------ */
+
+#gc_bookmark { margin-bottom: 35px; }
+
+/* ------------------------------------------------------------------------------------------ */
+
+#gc_search_results { border: 1px solid #4B89DC; }
+#gc_search_results > div.ul { border: 1px solid #4B89DC; }
+#gc_search_results > div.ul > div.msg { text-align: center; color: darkblue; } 

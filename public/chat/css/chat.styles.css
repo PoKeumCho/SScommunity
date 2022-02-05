@@ -1,0 +1,293 @@
+html, body {
+    min-width: 281px; min-height: 198px;
+    width: auto; height: auto;
+    width: 100%; height: 100%;
+} 
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------------------------- 1행 --------------------------------- */
+
+#chat_nav {
+    display: flex;
+    align-items: center;
+    width: 100%; height: 39px;
+    border-bottom: 1px solid darkgray;
+    background-color: #cdb4db;
+}
+
+#chat_nav select {
+    width: 160px; height: 30px;
+    margin-left: 5px;
+    padding-left: 5px;
+    font-family: 'Noto Serif', sans-serif;
+}
+
+#chat_nav > #notification { margin-left: 8px; }
+
+#chat_nav > #block {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+
+/* --------------------------------- 2행 --------------------------------- */
+
+#chat_content {
+    width: 100%; height: calc(100% - 40px - 40px);
+    overflow-y: scroll;
+    background-color: #b3dee2;
+}
+
+#chat_content > #chat_wrap > div {
+    width: 97%;
+    margin: 20px 0;   
+    display: flex;
+}
+
+#chat_content > #chat_wrap > div.me { 
+    flex-direction: row-reverse; 
+    margin-right: 3%;
+}
+#chat_content > #chat_wrap > div.other { 
+    flex-direction: row; 
+    margin-left: 3%;
+}
+
+#chat_content > #chat_wrap > div > p { font-family: 'Noto Serif', sans-serif; }
+#chat_content > #chat_wrap > div > p:not(.datetime) {
+    width: 75%;
+    box-sizing: border-box;
+    padding: 16px;
+    line-height: 1.3em;
+    white-space: pre-line;
+}
+#chat_content > #chat_wrap > div.me > p:not(.datetime) {
+    border-radius: 24px 0 24px 24px;
+    background-color: #ffee93;
+    margin-left: 1%;
+}
+#chat_content > #chat_wrap > div.other > p:not(.datetime) {
+    border-radius: 0 24px 24px 24px;
+    background-color: #fefeff;
+    margin-right: 1%;
+}
+
+#chat_content > #chat_wrap > div > p.datetime { 
+    display: inline-block; 
+    align-self: flex-end;
+    height: 30px;
+    font-size: 12px; line-height: 15px;
+}
+
+
+#chat_content > #chat_wrap > div > div.file {
+    width: 75%;
+    box-sizing: border-box;
+    padding: 16px;
+}
+#chat_content > #chat_wrap > div > div.file > img {
+    max-width:100%; height: auto;
+}
+#chat_content > #chat_wrap > div.me > div.file {
+    border-radius: 24px 0 24px 24px;
+    background-color: #ffee93;
+    margin-left: 1%;
+}
+#chat_content > #chat_wrap > div.other > div.file {
+    border-radius: 0 24px 24px 24px;
+    background-color: #fefeff;
+    margin-right: 1%;
+}
+
+/* ---------------------------------------------------------- */
+
+#chat_content > #block_wrap {
+    margin-top: 120px;
+}
+#chat_content > #block_wrap > div.error_wrap {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 110px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+#chat_content > #block_wrap > div.error_wrap > img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#chat_content > #block_wrap > div.error_wrap > h1 {
+    font-family: 'Noto Serif', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+#chat_content > #block_wrap > div.error_wrap > form { 
+    width: 100%; 
+    margin-top: 30px;
+    display: flex; 
+    justify-content: center;
+}
+#chat_content > #block_wrap > div.error_wrap > form > input {
+    width: 150px; height: 30px;
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 1.05em;
+}
+
+
+/* --------------------------------- 3행 --------------------------------- */
+
+#chat_sendMsg { width: 100%; }
+
+#chat_sendMsg > div.middle {
+    width: 100%; height: 39px;
+    border-top: 1px solid darkgray;
+    display: flex;
+    background-color: #e27396;
+}
+
+#chat_sendMsg > div.middle > div.center {
+    width: calc(100% - 39px * 2); height: 100%;
+}
+
+/** ---------------------------------------------------
+ *  Textarea auto expand with chat
+ *  [참고] https://codepen.io/nandai/pen/LRxRxK 
+ */
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%; width: 100%;
+}
+#ta-frame {
+    margin: 0;
+    padding: 7px 7px;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    border-radius: 5px;
+    background-color: #e27396;
+    z-index: 100;
+}
+#ta-frame textarea {  
+    overflow: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    margin:  0;
+    padding: 0 5px;
+    border:  0;
+    outline: 0;
+    width: 100%; height: 100%;
+    font-size: 16px;
+    font-family: 'Noto Serif', sans-serif;
+    resize: none;
+    z-index: 200;
+}
+
+/* --------------------------------------------------- */
+
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* Enter your style code */
+    #ta-frame {
+        margin: 7px auto;
+        position: relative;
+        padding: 0;
+        border-radius: 0;
+    }
+    #ta-frame textarea {
+        position: absolute;
+        bottom: 0;
+        background-color: #fff0f5;
+        color: black;
+        border-radius: 5px;
+    }
+}
+
+/* --------------------------------------------------- */
+
+/* Chrome(,Safari)에서 스크롤바를 안보이게 설정한다. */
+#ta-frame textarea::-webkit-scrollbar {
+    width: 0;
+}
+/* Firefox에서 스크롤바를 안보이게 설정한다. */
+#ta-frame textarea {
+    scrollbar-width: none;
+}
+/* IE에서 스크롤바를 안보이게 설정한다. */
+#ta-frame textarea {
+    -ms-overflow-style: none;
+    overflow: auto;
+}
+
+/* --------------------------------------------------- */
+
+#chat_sendMsg > div.middle > div.left,
+#chat_sendMsg > div.middle > div.right {
+    width: 39px; height: 100%;    
+    display: flex;
+    background-color: #ffafcc;
+}
+
+#chat_sendMsg > div.middle > div.left > label {
+    display: block; display: flex;
+    width: 100%; height: 100%;
+}
+
+#chat_sendMsg > div.middle > div.left img,
+#chat_sendMsg > div.middle > div.right img {
+    align-self: center; 
+    margin: 0 auto;
+}
+
+/* -------------------------- 이미지 미리보기 -------------------------- */
+
+div.bottom > div.img_wrap {
+    display: flex;
+    height: 120px;
+    overflow-y: scroll;
+    padding: 0px 1.5px;
+    padding-top: 4px;
+}
+
+/* Chrome(,Safari)에서 스크롤바를 안보이게 설정한다. */
+div.bottom > div.img_wrap::-webkit-scrollbar {
+    width: 0;
+}
+/* Firefox에서 스크롤바를 안보이게 설정한다. */
+div.bottom > div.img_wrap {
+    scrollbar-width: none;
+}
+/* IE에서 스크롤바를 안보이게 설정한다. */
+div.bottom > div.img_wrap {
+    -ms-overflow-style: none;
+    overflow: auto;
+}
+
+div.bottom > div.img_wrap > div.img_size_wrap {
+    padding: 0px 1.5px;
+}
+
+div.bottom > div.img_wrap img {
+    width: 100%;
+    height: auto;
+}
+
+/* -------------------------------------------- */
+
+.hidden {
+    display: none;
+}
+
+.clickable {
+    cursor: pointer;
+}

@@ -1,0 +1,65 @@
+/* --------------------------------- toggle --------------------------------- */
+
+#toggle { display: none; }
+
+#toggle_wrap { 
+    width: 85%; 
+    margin: 0 auto; 
+    margin-top: 20px;
+}
+#toggle_wrap img { float: left; }
+#toggle_wrap .text { 
+    height: 62px;
+    line-height: 62px;
+    padding-left: 14px;
+
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* --------------------------------- terms --------------------------------- */
+
+#terms_wrap { 
+    width: 80%; 
+    height: 400px;
+    border: 1px solid black;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: #F5F6F7;
+}
+
+#terms_wrap b {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* --------------------------------- button --------------------------------- */
+
+#button_wrap {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+#button_wrap > a { display: block; }
+#button_wrap > a.left { float: left; }
+#button_wrap > a.right { float: right; }
+
+#button_wrap > a {
+    padding: 2px 10px;
+    border: 1px solid black;
+    width: 40%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+} 
+
+#button_wrap > a.cancel { background-color: #5F7B88; }
+#button_wrap > a.confirm { background-color: #00BCD4; }

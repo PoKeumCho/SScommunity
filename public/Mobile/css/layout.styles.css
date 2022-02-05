@@ -1,0 +1,146 @@
+/* --------------------------------- 1행 --------------------------------- */
+
+#main_header {
+    /* 배경 지정 */
+    height: 50px;
+    background-color: #DCC3F9;
+
+    /* 자손 위치 지정 */
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+}
+
+#main_header > h1 {
+    color: white;
+    font-family: 'Rampart One', cursive;
+}
+
+#main_header > label {
+    display: block;
+    height: 40px;
+    position: absolute;
+}
+#main_header > label.left {
+    width: 32px; height: 32px;
+    left: 5px; top: 7px;
+
+    /* 스프라이트 이미지 사용 */
+    background: url('../img/layout/menu_sprites.png');
+    background-position: -32px 0px;
+
+    /*  태그 내부에 있는 글자를 보이지 않게 만든다. 
+        HTML 태그의 텍스트를 통해 해당 태그의 기능을 알려준다.
+     */
+    text-indent: -99999px;
+}
+#main_header > label.right {
+    width: 32px; height: 32px;
+    right: 5px; top: 7px;
+
+    background: url('../img/layout/menu_sprites.png');
+    background-position: 0px 0px;
+    text-indent: -99999px;
+}
+
+/* --------------------------------- 2행 --------------------------------- */
+
+/* id를 toggle_menu로 갖는 체크박스를 화면에서 제거한다. */
+#toggle_menu { display: none; }
+/* 클릭을 통한 토글 기능을 구현한다. */
+#toggle_menu ~ #wrap > #toggle_menu_gnd_wrap { display: none; }
+#toggle_menu:checked ~ #wrap > #toggle_menu_gnd_wrap { display: block; }
+
+/* 레이아웃 색상 */
+#toggle_menu_gnd_wrap {
+    background: #85D5EB;
+    padding: 10px; 
+}
+#toggle_menu_gnd {
+    background: white;
+    padding: 8px;
+}
+
+/* 토글 목록 */
+#toggle_menu_gnd > ul { overflow: hidden; }
+#toggle_menu_gnd > ul > li {
+    width: 25%;         /* [100% / (메뉴 개수)]를 넓이로 갖는다. */
+    float: left;
+    text-align: center;
+}
+/*  클릭하는 영역을 확장하고자 a 태그에 padding 속성을 적용한다.
+    padding 속성을 네 방향으로(top, bottom, right, left) 모두 사용하려면 display 속성에 block 키워드를 적용한다.
+ */
+#toggle_menu_gnd > ul > li > a {
+    display: block;
+    padding: 10px;
+
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.5em;
+}
+
+/* --------------------------------- 3행 --------------------------------- */
+
+/* id를 toggle_info로 갖는 체크박스를 화면에서 제거한다. */
+#toggle_info { display: none; }
+#toggle_info + #wrap > #toggle_info_gnd_wrap { display: none; }
+#toggle_info:checked + #wrap > #toggle_info_gnd_wrap { display: block; }
+
+/* 레이아웃 색상 */
+#toggle_info_gnd_wrap {
+    background: #DF69D0;
+    padding: 10px; 
+}
+#toggle_info_gnd {
+    background: white;
+    padding: 8px;
+}
+
+/* 토글 목록 */
+#toggle_info_gnd > ul { overflow: hidden; }
+#toggle_info_gnd > ul > li {
+    width: 33.33%;         /* [100% / (메뉴 개수)]를 넓이로 갖는다. */
+    float: left;
+    text-align: center;
+}
+
+#toggle_info_gnd > ul > li > a {
+    display: block;
+    padding: 10px;
+
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.5em;
+}
+
+/* --------------------------------- 5행 --------------------------------- */
+
+/* --------------------------------- 6행 --------------------------------- */
+
+#main_footer {
+    margin-top: 5px;
+    padding: 10px;
+    border-top: 1px solid #A978BE;
+}
+
+#main_footer > h1 { font-size: 0.67em; }
+#main_footer > h1:first-child { margin-bottom: 5px; }
+
+
+/* ----------------------------- 로딩 창 구현 ---------------------------- */
+
+#loadingBack {
+	position: absolute;
+	z-index: 100;
+	background-color: #000000;
+	display: none;
+	left: 0;
+	top: 0;
+}
+
+#loadingBar {
+	position:absolute;
+	left: 40%;
+	top: 40%;
+	display: none;
+	z-index: 200;
+}

@@ -1,0 +1,210 @@
+#add_schedule_wrap {
+    /* 중앙 정렬 */
+    width: 100%; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 3px solid darkgrey;
+    padding: 6px;
+    margin-bottom: 3px;
+}
+
+#add_schedule_wrap #classOption { 
+    width: 23%; height: 100%;
+    box-sizing: border-box;
+    padding: 3px; 
+    margin-right: 0.5%;
+}
+
+#add_schedule_wrap #inputClass { 
+    width: 42%; height: 100%;
+    box-sizing: border-box;
+    padding: 4px; 
+    margin-right: 0.5%;
+    border: 1px solid darkgrey;
+}
+
+#add_schedule_wrap input[value='추가'] {
+    width: 12%; height: 100%; 
+    box-sizing: border-box;
+    padding: 3px; 
+    margin-right: 0.5%;
+}
+
+#add_schedule_wrap input[value='직접 추가'] {
+    width: 18%; height: 100%; 
+    box-sizing: border-box;
+    padding: 3px; 
+    background-color: dimgray;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#schedule_wrap {
+    width: 100%;
+    height: 450px;
+    overflow-y: scroll;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#schedule_wrap > #schedule_head {
+    width: 100%;
+    height: 60px;
+
+    /* 요일 부분을 고정시킨다. */
+    position: sticky;
+    top: 0;
+    
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#schedule_wrap > #schedule_body {
+    width: 100%;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#schedule_head > .head-box {
+    width: 8%;
+
+    /* .head-box 공통 속성 */
+    float: left;
+    border: 1px solid #d6d6d6;
+    height: 100%;
+    background: #F2F2F2;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+#schedule_body > div > .body-box {
+    width: 8%;
+
+    /* .body-box 공통 속성 */
+    float: left;
+    border: 1px solid #d6d6d6;
+    height: 70px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#schedule_body > div > .body-box > p {
+    /* 두 줄로 표현되므로 .body-box의 height인 70px의 반에 해당하는
+        값(35px)으로 지정한다. */
+    line-height: 35px;
+}
+
+#schedule_head > .double-size, 
+#schedule_body > div > .double-size 
+{
+    width: 16%;
+}
+
+#schedule_body div.schedule_content {
+    overflow-y: scroll;
+}
+
+#schedule_body p.className_bold {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#invalidateBack {
+	position: absolute;
+	z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+	left: 0;
+	top: 0;
+}
+
+#my_class_formDiv {
+    display: inline-block;
+	position: absolute;
+	left: 4%;
+	top: 8%;
+	z-index: 200;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    padding: 18px;
+}
+
+#my_class_formDiv label,
+#my_class_formDiv input {
+    display: block;
+    margin-bottom: 16px;
+}
+#my_class_formDiv label {
+    font-weight: 550;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 26px;
+}
+#my_class_formDiv input { 
+    margin-bottom: 30px; 
+    border: 1px solid black;
+}
+#my_class_formDiv input.textInput {
+    box-sizing: border-box;
+    width: 98%; height: 35px;
+    padding-left: 5px;
+}
+
+#my_class_formDiv div.submit_wrap {
+    overflow: hidden;
+    height: 40px;
+    padding-top: 10px;
+}
+#my_class_formDiv div.submit_wrap > input {
+    float: right;
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 5px;
+    border: 1.5px solid darkslategray;
+}
+#my_class_formDiv div.submit_wrap > input:last-child {
+    margin-right: 10px; 
+}
+
+#my_classTime div.classTimeDiv {
+    margin-bottom: 16px;
+    font-size: 0.8em;
+}
+#my_classTime div.classTimeDiv:last-child {
+    margin-bottom: 30px;
+}
+
+#my_classTime select {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 8px;
+    border-radius: 12px;
+    border: 1.3px solid darkgray;
+}
+#my_classTime select:first-child {
+    margin-left: 0;
+}
+
+/*********** 예시 ***********
+#schedule_body > div > .body-box > #schedule_content_4_1 {
+    width: 100%;
+    height: calc(70px * 3 + 3px);
+    background-color: yellow;
+}
+#schedule_body > div > #schedule_box_4_1 {
+    border-bottom: none;
+}
+#schedule_body > div > #schedule_box_5_1 {
+    border-top: none;
+    border-bottom: none;
+}
+#schedule_body > div > #schedule_box_6_1 {
+    border-top: none;
+}
+****************************/

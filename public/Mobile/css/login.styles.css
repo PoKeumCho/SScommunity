@@ -1,0 +1,78 @@
+#login_section { margin-top: 70px; }
+
+#login_section > form > #login_id, 
+#login_section > form > #login_pw {
+    /* 중앙 정렬 */
+    display: block;
+    margin: 0 auto;
+
+    border: 3px solid black;
+    padding: 20px 25px;
+    width: 80%;
+    box-sizing: border-box;
+    background: #85D5EB;
+
+    font-size: 16px;
+}
+
+#login_section > form > div.error {
+    /* 중앙 정렬 */
+    display: block;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    width: 80%; height: 40px;
+    margin-bottom: 10px;
+    background-color: lightyellow;
+}
+#login_section > form > div.error > p {
+    color: red;
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.8em;
+}
+
+#login_section > form > #login_submit {
+    /* 중앙 정렬 */
+    display: block;
+    margin: 0 auto;
+
+    /* 크기 조절 */
+    box-sizing: border-box;
+    width: 80%;  height: 62px;
+
+    background: #A978BE;
+    color: white;
+    font-size: 32px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+/* ----------------------------------------------------------------------- */
+
+#login_aside {
+    /* 중앙 정렬 */
+    width: 100%; margin: 70px auto;
+}
+#login_aside > #login_aside_wrap {
+    /* 중앙 정렬 */
+    width: 80%; margin: 0 auto;
+}
+
+/* 수직으로 정렬된 li 태그를 수평으로 바꾼다. */
+#login_aside > #login_aside_wrap > ul { overflow: hidden; width: 100%; }
+#login_aside > #login_aside_wrap > ul > li { float: left; width: 33%; }
+#login_aside > #login_aside_wrap > ul > li > a {
+    /* 중앙 정렬 */
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid black;
+    font-size: 0.8em;
+}
+/* 마지막(회원가입 옆)에 위치한 테두리(border-right) 제거 */
+#login_aside > #login_aside_wrap > ul > li:last-child > a {
+    border-right: none;
+} 

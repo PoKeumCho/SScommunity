@@ -1,0 +1,5 @@
+/* 초기화 코드 */
+* { margin: 0; padding: 0; }
+body { font-family: 'Helvetica', sans-serif; }
+li { list-style: none; }
+a { text-decoration: none; }

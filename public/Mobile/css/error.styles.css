@@ -1,0 +1,23 @@
+#main_section > #error_section {
+    width: 100%;
+    height: 380px;
+    background-color: #F5F5F5;
+}
+
+#main_section > #error_section > div.error_wrap {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 120px;
+    background-color: #F5F5F5;
+} 
+
+#main_section > #error_section > div.error_wrap > img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#main_section > #error_section > div.error_wrap > h1 {
+    font-size: 1.3em;
+    text-align: center;
+}

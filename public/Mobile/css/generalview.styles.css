@@ -1,0 +1,652 @@
+#generalview_category_info {
+    /* 중앙 정렬 */
+    width: 100%; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 5px solid skyblue;
+    padding: 10px;
+}
+
+#generalview_category_info > h1 {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 30px;
+    height: 45px; line-height: 45px;
+    padding-left: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_nav {
+    /* 중앙 정렬 */
+    width: 100%; margin: 0 auto; 
+    box-sizing: border-box;
+    padding: 2px;
+    overflow: hidden;
+}
+
+#generalview_nav > a {
+    display: block;
+    float: left;
+
+    width: 80px; height: 25px; 
+    background-color: darkblue;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center; line-height: 25px;
+}
+
+#generalview_nav > #generalview_remove_general { float: right; }
+#generalview_nav > #generalview_remove_general input {
+    width: 110px; height: 25px; 
+    background-color: indianred;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_writer_info {
+    /* 중앙 정렬 */
+    width: 100%; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 5px solid #C599D7;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    overflow: hidden;
+}
+#generalview_writer_info > div { float: left; }
+
+#generalview_writer_info > div.img_wrap {
+    width: 90px; height: 90px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #F7F9FA;
+    margin-left: 10px;
+}
+
+#generalview_writer_info > div.img_wrap > img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+#generalview_writer_info > div.text_wrap {
+    height: 90px; position: relative;
+    width: 60%;
+    margin-left: 20px;
+}
+
+#generalview_writer_info > div.text_wrap > a {
+    display: block;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 32px;
+    color: black;
+    position: absolute; top: 20px;
+}
+
+#generalview_writer_info > div.text_wrap > p {
+    position: absolute; bottom: 5px;
+    font-size: 0.9em;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_article {
+    /* 중앙 정렬 */
+    width: 100%; margin: 0 auto; 
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+#generalview_article > div.text {
+    width: 98%; margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    line-height: 1.5em;
+
+    white-space: pre-line;
+}
+
+#generalview_article > div.img {
+    width: 98%; margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* --------- '좋아요' 부분  ---------*/
+
+#generalview_article > div.clicks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 98%; height: 40px;
+    margin: 0 auto; 
+    margin-top: 10px;
+}
+
+#generalview_article > div.clicks #likes,
+#generalview_article > div.clicks #dislikes,
+#generalview_article > div.clicks #stranger {
+    display: none;
+}
+#generalview_article > div.clicks label {
+    display: block;
+    width: 24px; height: 24px;
+}
+#generalview_article > div.clicks label.detail {
+    width: auto; height: auto;
+    font-size: 0.85em;
+}
+
+#generalview_article > div.clicks > p { 
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+#generalview_article > div.clicks label.detail[for=dislikes] {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+#generalview_article > div.clicks label.detail[for=stranger] {
+    margin-left: 5px;
+}
+
+#generalview_article > div.clicks #likes_icon { background-image: url('../img/general/like_24.png'); }
+#generalview_article > div.clicks #dislikes_icon { background-image: url('../img/general/dislike_24.png'); } 
+#generalview_article > div.clicks #stranger_icon { background-image: url('../img/general/stranger_24.png'); } 
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_add_comment {
+    /* 중앙 정렬 */
+    width: 98%; margin: 0 auto; 
+    height: 145px;
+    border: 2px solid #C5C4C8;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #F7F9FA;
+    margin-bottom: 10px;
+}
+
+#generalview_add_comment #new_comment {
+    resize: none; /* 크기 조절 방지 */
+    width: 99%; height: 80px;
+    border: 1px solid white;
+    margin-bottom: 5px;
+    font-family: 'Noto Serif', sans-serif;
+}
+
+#generalview_add_comment #add_wrap { overflow: hidden; }
+#generalview_add_comment #add_submit { display: none; }
+#generalview_add_comment #add_submit_icon {
+    display: block;
+    width: 32px; height: 32px;
+    background: url('../img/general/edit.png');
+    float: right;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments > div.comment_wrap {
+    /* 중앙 정렬 */
+    width: 98%; margin: 0 auto; 
+    border: 1px solid #C5C4C8;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #F7F9FA;
+    margin-bottom: 10px;
+}
+
+#generalview_comments > div.comment_wrap > div.base {
+    /* 중앙 정렬 */
+    width: 98%; margin: 0 auto; 
+    height: 180px;
+    border: 2px solid #C5C4C8;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 5px 10px;
+    background-color: #F7F9FA;
+    margin-bottom: 10px;
+    font-family: "맑은 고딕", "Malgun Gothic", 나눔고딕, 돋움, Dotum, 굴림, Gulim, "Apple SD Gothic Neo", sans-serif;
+}
+
+#generalview_comments > div.comment_wrap > div.base > div.base_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; height: 25%;
+}
+
+#generalview_comments > div.comment_wrap > div.base > div.base_middle {
+    width: 100%; height: 60%;
+    border: 1px solid darkgray;
+    margin: 0.5% 0;
+    margin-bottom: 1%;
+}
+
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; height: 12.5%;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments > div.comment_wrap > div.base > div.base_top > div.account_wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#generalview_comments > div.comment_wrap > div.base > div.base_top > div.account_wrap > div.img_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px; height: 38px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+#generalview_comments > div.comment_wrap > div.base > div.base_top > div.img_wrap > img { display: block; }
+
+#generalview_comments > div.comment_wrap > div.base > div.base_top > div.account_wrap > div.info_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 12px;
+}
+
+#generalview_comments > div.comment_wrap > div.base > div.base_top > div.account_wrap > div.info_wrap > p { color: black; }
+#generalview_comments > div.comment_wrap > div.base > div.base_top > div.account_wrap > div.info_wrap > a.nickname {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#generalview_comments > div.comment_wrap > div.base > div.base_top > div.account_wrap > div.info_wrap > p.datetime { 
+    font-size: 0.7em; 
+    color: dimgrey;
+}
+
+#generalview_comments > div.comment_wrap > div.base > 
+    div.base_top > div.delete_wrap input.base_comment_delete { display: none; }
+#generalview_comments > div.comment_wrap > div.base > div.base_top > div.delete_wrap label {
+    display: block;
+    width: 24px; height: 24px;
+}
+#generalview_comments > div.comment_wrap > div.base > 
+    div.base_top > div.delete_wrap label.base_comment_delete_icon { 
+    background-image: url('../img/general/delete_24.png'); 
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments > div.comment_wrap > div.base > div.base_middle {
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px;
+    overflow-y: scroll;
+    background-color: white;
+}
+/* Chrome(,Safari)에서 스크롤바를 안보이게 설정한다. */
+#generalview_comments > div.comment_wrap > div.base > div.base_middle::-webkit-scrollbar {
+    width: 0;
+}
+/* Firefox에서 스크롤바를 안보이게 설정한다. */
+#generalview_comments > div.comment_wrap > div.base > div.base_middle {
+    scrollbar-width: none;
+}
+/* IE에서 스크롤바를 안보이게 설정한다. */
+#generalview_comments > div.comment_wrap > div.base > div.base_middle {
+    -ms-overflow-style: none;
+    overflow: auto;
+}
+
+#generalview_comments > div.comment_wrap > div.base > div.base_middle > p { 
+    color: darkslategray; 
+    font-size: 1em;
+    line-height: 1.4em;
+
+    white-space: pre-line;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom > div.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom input.base_comment_likes,
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom input.base_comment_dislikes,
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom input.base_comment_stranger {
+    display: none;
+}
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom label {
+    display: block;
+    width: 16px; height: 16px;
+}
+
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom label.base_comment_likes_icon { 
+    background-image: url('../img/general/like_16.png'); 
+}
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom label.base_comment_dislikes_icon { 
+    background-image: url('../img/general/dislike_16.png'); 
+} 
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom label.base_comment_stranger_icon { 
+    background-image: url('../img/general/stranger_16.png'); 
+} 
+
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom label.detail {
+    width: auto; height: auto;
+    font-size: 0.8em;
+}
+
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom label.detail[data-type=비추] {
+    margin-left: 4px;
+    margin-right: 8px;
+}
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom label.detail[data-type=신고] {
+    margin-left: 3px;
+}
+
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom > div.left > p  {
+    margin-left: 5px;
+    margin-right: 10px;
+
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom > div.right { height: 100%; }
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom > div.right > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+#generalview_comments > div.comment_wrap > div.base > div.base_bottom > div.right img { margin-right: 8px; }
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments > div.comment_wrap > div.add_child_comment {
+    /* 중앙 정렬 */
+    width: 98%; margin: 0 auto; 
+    height: 145px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #F7F9FA;
+    margin-bottom: 10px;
+    display: none;                  /* 댓글 클릭 후 나타남 */
+}
+
+#generalview_comments > div.comment_wrap > div.add_child_comment #new_child_comment {
+    resize: none; /* 크기 조절 방지 */
+    width: 98%; height: 80px;
+    border: 1px solid white;
+    margin-bottom: 5px;
+    font-family: 'Noto Serif', sans-serif;
+}
+
+#generalview_comments > div.comment_wrap > div.add_child_comment #add_wrap { overflow: hidden; }
+#generalview_comments > div.comment_wrap > div.add_child_comment input.add_child_submit { display: none; }
+#generalview_comments > div.comment_wrap > div.add_child_comment label.add_child_icon {
+    display: block;
+    width: 32px; height: 32px;
+    background: url('../img/general/edit.png');
+    float: right;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap {
+    /* 중앙 정렬 */
+    width: 98%; margin: 0 auto; 
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #F7F9FA;
+    margin-bottom: 10px;
+    display: none;                  /* 댓글 클릭 후 나타남 */
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child {
+    /* 중앙 정렬 */
+    width: 98%; margin: 0 auto; 
+    height: 160px;
+    border: 2px solid powderblue;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 5px 10px;
+    background-color: #F7F9FA;
+    margin-bottom: 10px;
+    font-family: "맑은 고딕", "Malgun Gothic", 나눔고딕, 돋움, Dotum, 굴림, Gulim, "Apple SD Gothic Neo", sans-serif;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; height: 25%;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_middle {
+    width: 100%; height: 55%;
+    border: 1px solid darkgray;
+    margin: 1% 0;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; height: 17%;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_top > div.account_wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_top > div.account_wrap > div.img_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px; height: 38px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_top 
+    > div.img_wrap > img { display: block; }
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_top 
+    > div.account_wrap > div.info_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 12px;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_top 
+    > div.account_wrap > div.info_wrap > p { color: black; }
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_top 
+    > div.account_wrap > div.info_wrap > a.nickname {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_top 
+    > div.account_wrap > div.info_wrap > p.datetime { 
+    font-size: 0.7em; 
+    color: dimgrey;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_top 
+    > div.delete_wrap input.child_comment_delete { display: none; }
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_top > div.delete_wrap label {
+    display: block;
+    width: 24px; height: 24px;
+}
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_top 
+    > div.delete_wrap label.child_comment_delete_icon { 
+    background-image: url('../img/general/delete_24.png'); 
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_middle {
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px;
+    overflow-y: scroll;
+    background-color: white;
+}
+/* Chrome(,Safari)에서 스크롤바를 안보이게 설정한다. */
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_middle::-webkit-scrollbar {
+    width: 0;
+}
+/* Firefox에서 스크롤바를 안보이게 설정한다. */
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_middle {
+    scrollbar-width: none;
+}
+/* IE에서 스크롤바를 안보이게 설정한다. */
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_middle {
+    -ms-overflow-style: none;
+    overflow: auto;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_middle > p { 
+    color: darkslategray; 
+    font-size: 1em;
+    line-height: 1.4em;
+
+    white-space: pre-line;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_bottom > div.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_bottom input.child_comment_likes,
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_bottom input.child_comment_dislikes,
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_bottom input.child_comment_stranger {
+    display: none;
+}
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_bottom label {
+    display: block;
+    width: 16px; height: 16px;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child 
+    > div.child_bottom label.child_comment_likes_icon { 
+    background-image: url('../img/general/like_16.png'); 
+}
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child 
+    > div.child_bottom label.child_comment_dislikes_icon { 
+    background-image: url('../img/general/dislike_16.png'); 
+} 
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child 
+    > div.child_bottom label.child_comment_stranger_icon { 
+    background-image: url('../img/general/stranger_16.png'); 
+} 
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_bottom label.detail {
+    width: auto; height: auto;
+    font-size: 0.8em;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child 
+    > div.child_bottom label.detail[data-type=비추] {
+    margin-left: 4px;
+    margin-right: 8px;
+}
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child 
+    > div.child_bottom label.detail[data-type=신고] {
+    margin-left: 3px;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_wrap > div.child > div.child_bottom > div.left > p  {
+    margin-left: 5px;
+    margin-right: 10px;
+
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments > div.comment_wrap > div.child_comment_nav {
+    overflow: hidden;
+
+    /* 중앙 정렬 */
+    width: 100%; margin: 0 auto; 
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    /* 댓글 클릭 후 나타남 */
+    display: none;                  
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_nav > a {
+    display: block; float: left;
+    width: 70px; height: 40px;
+    text-align: center; line-height: 40px;
+    border: 2px solid darkred;
+    border-radius: 15px;
+    color: darkred; font-weight: bold;
+}
+
+#generalview_comments > div.comment_wrap > div.child_comment_nav > a.first { margin-right: 10px; }
+#generalview_comments > div.comment_wrap > div.child_comment_nav > a.right { float: right; }
+
+/* ------------------------------------------------------------------------------------------ */
+
+#generalview_comments_nav {
+    overflow: hidden;
+
+    /* 중앙 정렬 */
+    width: 100%; margin: 0 auto; 
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#generalview_comments_nav > a {
+    display: block; float: left;
+    width: 70px; height: 40px;
+    text-align: center; line-height: 40px;
+    border: 2px solid darkred;
+    border-radius: 15px;
+    color: darkred; font-weight: bold;
+}
+
+#generalview_comments_nav > a.first { margin-right: 10px; }
+#generalview_comments_nav > a.right { float: right; }
