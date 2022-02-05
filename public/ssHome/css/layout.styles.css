@@ -1,0 +1,135 @@
+/* --------------------------------- 1행 --------------------------------- */
+
+#main_header {
+    /* 중앙 정렬 */
+    width: 960px; margin: 0 auto;
+
+    /*  자손의 position 속성에 absolute 키워드(절대 위치 좌표) 적용을 위한 처리 
+        (1) height 속성을 사용하여 영역을 차지하도록 설정한다.
+        (2) 부모의 position 속성에 relative 키워드를 적용한다.
+     */
+    height: 160px;
+    position: relative;
+}
+
+#main_header > #main_title {
+    position: absolute;
+    left: 20px; top: 30px;
+}
+#main_header > #main_gnb {
+    position: absolute;
+    right: 0px; top: 0px;
+}
+
+#main_header > #main_title > #main_logo { float: left; }
+#main_header > #main_title > h1 { 
+    display: inline;        /* 로고 img 옆에 글자가 위치하도록 설정한다. */
+    line-height: 100px;     /* 수직 중앙 정렬 (#main_logo의 height와 일치시킨다.) */
+    margin-left: 30px; 
+    font-family: 'Rampart One', cursive;
+    font-size: 50px;
+    color: #A978BE;
+}
+
+/*  수직으로 정렬된 li 태그를 수평으로 바꾼다.
+    자손 태그에 float 속성을 사용했으므로 부모의 overflow 속성에 hidden 키워드를 적용한다.
+ */
+#main_gnb > ul { overflow: hidden; }
+#main_gnb > ul > li { float: left; }
+#main_gnb > ul > li > a {
+    display: block;
+    padding: 2px 10px;
+    border: 1px solid black;
+    text-decoration: none;      /* 링크 밑줄 제거 */
+}
+#main_gnb > ul > li > a:hover {
+    background: black;
+    color: white;
+}
+#main_gnb > ul > li:first-child > a { border-radius: 10px 0 0 10px; }
+#main_gnb > ul > li:last-child > a { border-radius: 0 10px 10px 0; }
+
+/* --------------------------------- 2행 --------------------------------- */
+
+#main_lnb {
+    /* 중앙 정렬 */
+    width: 960px; margin: 15px auto;
+}
+
+#main_lnb > ul { overflow: hidden; }
+#main_lnb > ul > li { float: left; }
+#main_lnb > ul > li > a {
+    display: block;
+
+    /* 클릭하는 영역을 확장하기 위해 a 태그에 박스 속성을 적용한다. */
+    padding: 10px 10px;
+    box-sizing: border-box;
+    width: 240px;               /* [960px / (메뉴 개수)]를 넓이로 갖는다. */
+
+    border: 1px solid #7BB1E9;
+    background-color: #85D5EB;
+
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 40px;
+}
+#main_lnb > ul > li > a:hover {
+    background-color: #7BB1E9;
+}
+#main_lnb > ul > li > a:active {
+    color: blue;
+}
+#main_lnb > ul > li:first-child > a { border-radius: 15px 0 0 15px; }
+#main_lnb > ul > li:last-child > a { border-radius: 0 15px 15px 0; }
+
+/* --------------------------------- 3행 --------------------------------- */
+
+#main_content {
+    /* 중앙 정렬 */
+    width: 960px; margin: 0 auto;
+
+    /* 수평 레이아웃 구성 */
+    overflow: hidden;
+}
+
+#main_content > #main_aside {
+    width: 300px;
+    float: left;
+}
+#main_content > #main_section {
+    width: 650px; min-height: 800px;
+    float: right;
+    border: 1px; 
+}
+
+/* --------------------------------- 4행 --------------------------------- */
+
+#main_footer {
+    /* 중앙 정렬 */
+    width: 960px; margin: 0 auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #A978BE;
+}
+#main_footer > h1:first-child { margin-bottom: 8px; }
+
+/* ----------------------------- 로딩 창 구현 ---------------------------- */
+
+#loadingBack {
+	position: absolute;
+	z-index: 100;
+	background-color: #000000;
+	display: none;
+	left: 0;
+	top: 0;
+}
+
+#loadingBar {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	display: none;
+	z-index: 200;
+}

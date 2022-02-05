@@ -1,0 +1,363 @@
+#trade_nav {
+    /* 중앙 정렬 */
+    width: 630px; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 5px solid darkgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#trade_nav #campus_nav {
+    width: 18%; height: 30px;
+    padding-left: 5px;
+}
+#trade_nav #category_nav {
+    width: 24%; height: 30px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+#trade_nav #trade_nav_subwrap { display: inline; }
+#trade_nav #search_nav {
+    width: 40%; height: 24px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+#trade_nav #submit_nav {
+    width: 10%; height: 30px;
+    margin-left: 5px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#trade_add {
+    /* 중앙 정렬 */
+    width: 630px; margin: 0 auto; 
+    height: 260px;
+    border: 2px solid #C5C4C8;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #F7F9FA;
+    margin-bottom: 10px;
+}
+
+#trade_add #trade_add_subwrap {
+    width: 606px;
+    overflow: hidden;
+}
+#trade_add #trade_add_subwrap > #trade_title {
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    width: 50%; height: 50px;
+    padding-left: 10px;
+
+    font-size: 1.1em;
+}
+#trade_add #trade_add_subwrap > div.subDiv {
+    box-sizing: border-box;
+    float: left;
+    width: 50%; height: 50px;
+}
+#trade_add #trade_add_subwrap > div.subDiv > #trade_category,
+#trade_add #trade_add_subwrap > div.subDiv > #trade_price {
+    box-sizing: border-box;
+    border: 1px solid darkgrey;
+    width: 100%; height: 50%;
+    padding-left: 5px;
+    background-color: white;
+}
+
+#trade_add #trade_info {
+    resize: none; /* 크기 조절 방지 */
+    box-sizing: border-box;
+    width: 606px; height: 100px;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+#trade_add #trade_add_wrap { overflow: hidden; }
+
+#trade_add #trade_add_wrap div.addImgInputWrap {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px; height: 64px;
+    border-radius: 5px;
+    background-color: #D3D3D3;
+}
+
+#trade_add #trade_add_wrap div.addImgWrap {
+    float: left;
+    width: 64px; height: 64px;
+    margin-left: 5px;
+    background-color: #ebecf0;
+}
+
+#trade_add #trade_add_wrap div.addImgWrap > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#trade_add #trade_add_wrap div.addSubmitWrap {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px; height: 64px;
+    border-radius: 3px;
+    border: 1px solid #A9090C;
+    background-color: white;
+}
+
+/* IE img label for 클릭 안될때 처리 */
+#trade_add #trade_add_wrap div.addImgInputWrap > img,
+#trade_add #trade_add_wrap div.addSubmitWrap > img {
+    pointer-events: none;
+}
+
+#trade_add #trade_add_wrap #add_campus {
+    float: right;
+    width: 64px; height: 64px;
+    margin-right: 6px;
+}
+
+#trade_add #trade_add_wrap #add_campus label {
+    display: block;
+    margin-top: 6px;
+}
+
+.hidden { display: none; }
+
+/* ------------------------------------------------------------------------------------------ */
+
+#trade_content > div.content {
+    /* 중앙 정렬 */
+    width: 630px; margin: 0 auto; 
+    height: 280px;
+    border: 2px solid #C9B5D4;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #F7F9FA;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#trade_content > div.content > div {
+    float: left;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 5px;
+}
+
+#trade_content > div.content > div.left {
+    width: 40%;
+    /* background-color: red; */
+}
+
+#trade_content > div.content > div.right {
+    width: 60%;
+    /* background-color: blue; */
+}
+
+#trade_content > div.content p {
+    font-family: 'Noto Serif', sans-serif;
+    cursor: default;
+}
+
+/* --------------------------------------------------------- */
+
+#trade_content > div.content > div.left > div { box-sizing: border-box; }
+
+#trade_content > div.content > div.left > div.content_imgWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; height: 75%; 
+    background-color: #DEDEDE;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    padding-top: 8px;
+}
+#trade_content > div.content > div.left > div.content_imgWrap > img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+#trade_content > div.content > div.left > div.content_dotWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; height: 8px; 
+    background-color: #DEDEDE;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 1.5%;
+}
+#trade_content > div.content > div.left > div.content_dotWrap > .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #AC41D4;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative; bottom: 4px;
+}
+#trade_content > div.content > div.left > div.content_dotWrap > .select {
+    background-color: #732192;
+}
+
+#trade_content > div.content > div.left > div.content_priceWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; height: calc(15% - 8px);
+    margin-bottom: 1.5%;
+}
+#trade_content > div.content > div.left > div.content_priceWrap > p {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#trade_content > div.content > div.left > div.content_expelWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%; height: 7%;
+    margin: 0 auto;
+    background-color: #F8F1AE;
+    border-radius: 10px;
+} 
+#trade_content > div.content > div.left > div.content_expelWrap:hover {
+    background-color: #DFBF46;
+    color: #7C1E39;
+}
+#trade_content > div.content > div.left > div.content_expelWrap > p {
+    text-align: center;
+    font-size: 0.85em;
+}
+
+/* --------------------------------------------------------- */
+
+#trade_content > div.content > div.right > div { box-sizing: border-box; }
+
+#trade_content > div.content > div.right > div.content_titleWrap {
+    display: flex;
+    align-items: center;
+    width: 100%; height: 15%; 
+    border-radius: 5px;
+    background-color: #CBC3E3;
+    margin-bottom: 1.5%;
+}
+#trade_content > div.content > div.right > div.content_titleWrap:hover {
+    background-color: #324460;
+    color: white;
+}
+#trade_content > div.content > div.right > div.content_titleWrap > p {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 1.4em;
+
+    /* 글자 감추기 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#trade_content > div.content > div.right > div.content_dateWrap {
+    display: flex;
+    align-items: center;
+    width: 100%; height: 8%; 
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 1.5%;
+}
+#trade_content > div.content > div.right > div.content_dateWrap > p {
+    padding-left: 10px;
+    font-size: 0.85em;
+}
+
+#trade_content > div.content > div.right > div.content_campusWrap {
+    display: flex;
+    align-items: center;
+    width: 100%; height: 10%; 
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 2%;
+}
+#trade_content > div.content > div.right > div.content_campusWrap > p {
+    padding-left: 10px;
+    color: #4A3961;
+}
+
+#trade_content > div.content > div.right > div.content_infoWrap {
+    width: 100%; height: 50%; 
+    border: 2px solid #CBC3E3;
+    border-radius: 10px;
+    background-color: white;
+    overflow-y: scroll;
+}
+/* Chrome(,Safari)에서 스크롤바를 안보이게 설정한다. */
+#trade_content > div.content > div.right > div.content_infoWrap::-webkit-scrollbar {
+    width: 0;
+}
+/* Firefox에서 스크롤바를 안보이게 설정한다. */
+#trade_content > div.content > div.right > div.content_infoWrap {
+    scrollbar-width: none;
+}
+/* IE에서 스크롤바를 안보이게 설정한다. */
+#trade_content > div.content > div.right > div.content_infoWrap {
+    -ms-overflow-style: none;
+    overflow: auto;
+}
+#trade_content > div.content > div.right > div.content_infoWrap > p {
+    padding: 10px;
+    color: darkslategray; 
+    font-size: 1.1em;
+    line-height: 1.25em;
+
+    white-space: pre-line;
+}
+
+#trade_content > div.content > div.right > div.content_categoryWrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%; height: 8%; 
+    border-radius: 5px;
+    margin-top: 2%;
+}
+#trade_content > div.content > div.right > div.content_categoryWrap > p {
+    font-size: 0.85em;
+    padding-right: 10px;
+    color: #4A3961;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#more { padding-left: 10px; }
+
+/* ------------------------------------------------------------------------------------------ */
+
+#gotoTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #FF6961; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#gotoTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}

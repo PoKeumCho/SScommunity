@@ -1,0 +1,64 @@
+/* --------------------------------- toggle --------------------------------- */
+
+#login_content > #toggle { display: none; }
+
+#login_content > #toggle_wrap { 
+    width: 456px; 
+    margin: 0 auto;
+}
+#login_content > #toggle_wrap img { float: left; }
+#login_content > #toggle_wrap .text { 
+    height: 62px;
+    line-height: 62px;
+    padding-left: 20px;
+
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* --------------------------------- terms --------------------------------- */
+
+#login_content > #terms_wrap { 
+    width: 456px; 
+    height: 400px;
+    border: 1px solid black;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: #F5F6F7;
+}
+
+#login_content > #terms_wrap b {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* --------------------------------- button --------------------------------- */
+
+#login_content > #button_wrap {
+    width: 456px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+#login_content > #button_wrap > a { display: block; }
+#login_content > #button_wrap > a.left { float: left; }
+#login_content > #button_wrap > a.right { float: right; }
+
+#login_content > #button_wrap > a {
+    padding: 2px 10px;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+} 
+
+#login_content > #button_wrap > a.cancel { background-color: #5F7B88; }
+#login_content > #button_wrap > a.confirm { background-color: #00BCD4; }

@@ -1,0 +1,51 @@
+#login_content > form {
+    width: 456px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+#login_content .wrap {
+    margin-bottom: 10px;
+}
+
+#login_content .wrap > div {    /* label 글자와 input 태그 사이의 간격 */
+    margin-bottom: 16px;
+}
+
+#login_content .wrap label {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#login_content .wrap > input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 456px;
+    height: 50px;
+    border: 1px solid black;
+    padding-left: 15px;
+    background-color: #B4D9DE;
+    font-size: 1.1em;
+}
+
+#login_content .wrap > p {
+    font-size: 0.8em;
+    color: #fc0303;
+    margin-top: 10px;
+}
+
+#login_content > form > p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+/* 인증하기 버튼 */
+#login_content .wrap:last-child > input {
+    height: 60px;
+    margin-top: 20px;
+    background-color: #A978BE;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}

@@ -1,0 +1,178 @@
+a { text-decoration: none; }    /* 링크 밑줄 제거 */
+
+
+/************ 회원 정보를 표시하는 영역 ************/
+
+#main_aside > #before_account_wrap,
+#main_aside > #after_account_wrap {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #D1D1D1;
+    background-color: #F7F9FA;
+}
+
+/***************** 로그인 전 상태 *****************/
+
+#main_aside > #before_account_wrap > a.login {
+    display: block;
+    width: 94%;
+    height: 60px;
+    margin: 20px auto;          /* 중앙 정렬 */
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #C599D7;
+}
+
+#main_aside > #before_account_wrap > a.login > p {
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+#main_aside > #before_account_wrap > ul.login_nav { 
+    overflow: hidden; 
+    width: 94%;
+    margin: 0 auto;
+}
+#main_aside > #before_account_wrap > ul.login_nav > li { 
+    float: left;
+}
+#main_aside > #before_account_wrap > ul.login_nav > li > a {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    border-left: 1px solid black;
+    padding: 0 10px;
+}
+#main_aside > #before_account_wrap > ul.login_nav > li:first-child > a {
+    border-left: none;
+}
+
+/* 광고 */
+#main_aside > #ads_wrap {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/***************** 로그인 후 상태 *****************/
+
+#main_aside > #after_account_wrap > #my_account {
+    width: 94%;
+    height: 200px;
+    margin: 10px auto;          /* 중앙 정렬 */
+} 
+
+#main_aside > #after_account_wrap > #my_account > .profile_wrap {
+    overflow: hidden;
+    
+    height: 110px;
+    position: relative;
+}
+
+#main_aside > #after_account_wrap > #my_account > .profile_wrap > .img_wrap {
+    float: left;
+    width: 90px; height: 90px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#main_aside > #after_account_wrap > #my_account > .profile_wrap > .img_wrap > img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+#main_aside > #after_account_wrap > #my_account > .profile_wrap >  .nickname_wrap {
+    float: left;
+    height: 80px;
+} 
+
+#main_aside > #after_account_wrap > #my_account > .profile_wrap >  .nickname_wrap > p {
+    text-align: center;
+    line-height: 80px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#main_aside > #after_account_wrap > #my_account > .profile_wrap > .nav_wrap {
+    position: absolute;
+    right: 20px; bottom: 10px;
+    height: 16px;
+    background-color: white;
+}
+
+#main_aside > #after_account_wrap > #my_account > .profile_wrap > .nav_wrap > a.info {
+    padding-right: 10px;
+    border-right: 1px solid blueviolet;
+    color: darkblue;
+}
+
+#main_aside > #after_account_wrap > #my_account > .profile_wrap > .nav_wrap > a.logout {
+    padding-left: 10px;
+    color: darkblue;
+}
+
+#main_aside > #after_account_wrap > #my_account > div.issungshin_wrap,
+#main_aside > #after_account_wrap > #my_account > #issungshin_wrap {
+    display: block;
+    width: 94%;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #C599D7;
+}
+
+#main_aside > #after_account_wrap > #my_account > div.issungshin_wrap > p,
+#main_aside > #after_account_wrap > #my_account > #issungshin_wrap > p {
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+/**
+ *  [참고] https://cssgradient.io/
+ */
+#main_aside > #after_account_wrap > .button {
+    width: 98%; height: 65px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+#main_aside > #after_account_wrap > .button:hover {
+    background: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+} 
+
+#main_aside > #after_account_wrap > div.button {
+    margin-top: 15px;
+}
+#main_aside > #after_account_wrap > div.button:hover {
+    cursor: pointer;
+}
+
+#main_aside > #after_account_wrap .buttonText {
+    display: block;
+    box-sizing: border-box;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 35px;
+    text-align: center; line-height: 65px;
+    padding-top: 3px;
+    color: white;
+}
+
+/************** 광고를 표시하는 영역 **************/
+
+#main_aside > #after_account_wrap > #ads_wrap {
+    width: 300px;
+    margin-top: 30px;
+}

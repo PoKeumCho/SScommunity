@@ -1,0 +1,126 @@
+#myarticle_content > article {
+    display: flex;
+    flex-direction: column;
+    width: 95%; height: 250px;
+    box-sizing: border-box;
+    margin: 15px auto;
+    padding: 10px;
+    border: 1.5px solid #A290BD;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------------------------------------------------------ */
+
+#myarticle_content > article > div.top {
+    display: flex;
+    width: 100%; height: 80%;
+    margin-bottom: 5px;
+}
+
+#myarticle_content > article > div.top > div.left {
+    /* 이미지 중앙 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 40%; height: 100%;
+    border-radius: 5px;
+    background-color: #ECECEC;
+    overflow: hidden;
+}
+
+#myarticle_content > article > div.top > div.left > img { 
+    max-width:100%;
+    max-height:100%;
+}
+
+#myarticle_content > article > div.top > div.right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    width: calc(60% - 5px); height: 100%;
+}
+
+#myarticle_content > article > div.top > div.right > p.title {
+    width: 100%; height: 40px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 5px;
+    background-color: #CBC3E3;
+    text-align: center; line-height: 40px;
+    font-size: 1.4em;
+    font-weight: 550;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#myarticle_content > article > div.top > div.right > p.date {
+    width: 100%; height: 15px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#myarticle_content > article > div.top > div.right > p.campus {
+    width: 100%; height: 16px;
+    color: #4A3961;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#myarticle_content > article > div.top > div.right > p.category {
+    width: 100%; height: 16px;
+    color: #624B80;
+    padding-right: 5px;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#myarticle_content > article > div.top > div.right > a.content_priceWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%; height: calc(100% - 127px);
+    border-radius: 10px;
+    background-color: #8ECA92;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+#myarticle_content > article > div.top > div.right 
+    > a.content_priceWrap:hover { background-color: #E9AE0B; }
+
+/* ------------------------------------------------------------------ */
+
+#myarticle_content > article > div.bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; height: calc(20% - 5px);
+    box-sizing: border-box;
+}
+
+#myarticle_content > article > div.bottom > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 2px); height: 100%;
+    box-sizing: border-box;
+    background-color: #E2DDEB;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1.05em;
+    color: #225099;
+}
+#myarticle_content > article > div.bottom > a:hover { background-color: #E9DEEA; }
+#myarticle_content > article > div.bottom > a.left { border-radius: 5px 0 0 5px; }
+#myarticle_content > article > div.bottom > a.right { border-radius: 0 5px 5px 0; }
+
+.hidden { display: none; }

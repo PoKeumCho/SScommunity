@@ -1,0 +1,117 @@
+div.button_wrap {
+    /* 중앙 정렬 */
+    margin: 0 auto;
+    position: relative;
+    width: 630px; height: 203px; 
+    box-sizing: border-box;
+    border: 5px solid skyblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+div.button_wrap > div.button {
+    width: 240px; height: 60px;
+    background-color: #C599D7;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #A9A9A9;
+}
+
+div.button_wrap > div.button > a {
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 36px;
+    color: darkblue;
+}
+
+div.button_wrap > #change_pw_button {
+    position: absolute; 
+    top: 23px; left: 50px;
+}
+
+div.button_wrap > #change_nickname_button {
+    position: absolute; 
+    top: 23px; right: 50px;
+}
+
+div.button_wrap > #change_accountimg_button {
+    position: absolute; 
+    bottom: 23px; left: 50px;
+}
+
+div.button_wrap > #withdrawal_button {
+    position: absolute; 
+    bottom: 23px; right: 50px;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+div.change_wrap {
+    display: none;
+
+    /* 중앙 정렬 */
+    width: 630px; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 5px solid #C599D7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+div.change_wrap > div {
+    display: none;
+    margin: 20px;
+}
+
+div.change_wrap h1 {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+div.change_wrap > #change_pw > h6 {
+    display: inline-block;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    margin-bottom: 30px;
+    color: #FC0303;
+    background-color: lightyellow;
+}
+
+div.change_wrap input {
+    display: block;
+    background-color: aliceblue;
+    color: black;
+    width: 200px; height: 40px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+div.change_wrap input.submit {
+    background-color: #A978BE;
+    width: 226px;
+    padding: 0;
+    color: white; 
+    font-weight: bold;
+}
+
+div.change_wrap > #change_accountimg select {
+    width: 226px; height: 40px;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+
+div.change_wrap > #change_accountimg #accountimg_preview {
+    display: block;
+    padding: 10px 0;
+}
+
+div.change_wrap p.errMsg {
+    font-size: 0.8em;
+    color: #FC0303;
+    margin-bottom: 16px;
+}

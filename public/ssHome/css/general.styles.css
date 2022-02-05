@@ -1,0 +1,339 @@
+#general_remove_category {
+    /* 중앙 정렬 */
+    width: 630px; margin: 0 auto; 
+    box-sizing: border-box;
+    padding: 2px;
+    overflow: hidden;
+}
+#general_remove_category > form { float: right; }
+#general_remove_category > form > input { 
+    width: 110px; 
+    background-color: indianred;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#general_info {
+    /* 중앙 정렬 */
+    width: 630px; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 5px solid skyblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#general_info > div {
+    overflow: hidden;
+}
+#general_info > div > h1 {
+    float: left;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 38px;
+    height: 45px; line-height: 45px;
+}
+#general_info > div > p {
+    float: right;
+}
+
+#general_info > p { margin-top: 10px; }
+
+/* ------------------------------------------------------------------------------------------ */
+
+#general_nav {
+    /* 중앙 정렬 */
+    width: 630px; margin: 0 auto; 
+    box-sizing: border-box;
+    border: 5px solid #C599D7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#general_nav #general_order {
+    width: 150px; height: 40px;
+    font-size: 15px;
+    padding-left: 3px;
+}
+#general_nav #general_search {
+    width: 300px; height: 35px;
+    border: 1px solid black;
+    font-size: 15px;
+    margin: 0 10px;
+    padding-left: 10px;
+}
+#general_nav #nav_submit {
+    width: 50px; height: 40px;
+    font-size: 15px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#general_add {
+    /* 중앙 정렬 */
+    width: 630px; margin: 0 auto; 
+    height: 205px;
+    border: 2px solid #C5C4C8;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #F7F9FA;
+    margin-bottom: 10px;
+}
+
+#general_add #new_text {
+    resize: none; /* 크기 조절 방지 */
+    font-family: 'Noto Serif', sans-serif;
+    width: 600px; height: 140px;
+    border: 1px solid white;
+    margin-bottom: 5px;
+}
+
+#general_add #add_wrap { overflow: hidden; }
+
+#general_add #add_file { display: none; }
+#general_add #add_submit {
+    display: none;
+}
+
+#general_add #add_file_icon {
+    display: block;
+    width: 24px; height: 24px;
+    background: url('../img/general/clip.png');
+    float: left;
+    margin-top: 4px;
+}
+
+#general_add #add_submit_icon {
+    display: block;
+    width: 32px; height: 32px;
+    background: url('../img/general/edit.png');
+    float: right;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#general_add_img_wrap {
+    /* 중앙 정렬 */
+    width: 630px; margin: 0 auto; 
+    box-sizing: border-box;
+    background-color: #F7F9FA;
+    margin-bottom: 10px;
+}
+#general_add_img_wrap > img {
+    padding: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#general_list > article {
+    /* 중앙 정렬 */
+    width: 630px; margin: 0 auto; 
+    height: 240px;
+    border: 2px solid #C5C4C8;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #F7F9FA;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------ */
+
+#general_list > article > a {
+    display: flex;
+    flex-direction: column;
+    width: 100%; height: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "맑은 고딕", "Malgun Gothic", 나눔고딕, 돋움, Dotum, 굴림, Gulim, "Apple SD Gothic Neo", sans-serif;
+    color: black;
+}
+
+#general_list > article > a > div.article_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; height: 25%;
+}
+
+#general_list > article > a > div.article_middle {
+    width: 100%; height: 60%;
+    border: 1px solid darkgray;
+    margin: 0.5% 0;
+    margin-bottom: 2%;
+}
+
+#general_list > article > a > div.article_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; height: 12.5%;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#general_list > article > a > div.article_top > div.account_wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#general_list > article > a > div.article_top > div.account_wrap > div.img_wrap {
+    width: 45px; height: 45px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+#general_list > article > a > div.article_top > div.account_wrap > div.img_wrap > img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+#general_list > article > a > div.article_top > div.account_wrap > div.info_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 12px;
+}
+
+#general_list > article > a > div.article_top > div.account_wrap > div.info_wrap > p { color: black; }
+#general_list > article > a > div.article_top > div.account_wrap > div.info_wrap > p.nickname {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#general_list > article > a > div.article_top > div.account_wrap > div.info_wrap > p.datetime { 
+    font-size: 0.8em; 
+    color: dimgrey;
+}
+
+
+#general_list > article > a > div.article_top > div.delete_wrap input.delete { display: none; }
+#general_list > article > a > div.article_top > div.delete_wrap label {
+    display: block;
+    width: 24px; height: 24px;
+}
+#general_list > article > a > div.article_top > div.delete_wrap label.delete_icon { 
+    background-image: url('../img/general/delete_24.png'); 
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#general_list > article > a > div.article_middle {
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px;
+    overflow-y: scroll;
+    background-color: white;
+}
+/* Chrome(,Safari)에서 스크롤바를 안보이게 설정한다. */
+#general_list > article > a > div.article_middle::-webkit-scrollbar {
+    width: 0;
+}
+/* Firefox에서 스크롤바를 안보이게 설정한다. */
+#general_list > article > a > div.article_middle {
+    scrollbar-width: none;
+}
+/* IE에서 스크롤바를 안보이게 설정한다. */
+#general_list > article > a > div.article_middle {
+    -ms-overflow-style: none;
+    overflow: auto;
+}
+
+#general_list > article > a > div.article_middle > p { 
+    color: darkslategray; 
+    font-size: 1em;
+    line-height: 1.4em;
+
+    white-space: pre-line;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#general_list > article > a > div.article_bottom > div.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+#general_list > article > a > div.article_bottom input.likes,
+#general_list > article > a > div.article_bottom input.dislikes,
+#general_list > article > a > div.article_bottom input.stranger {
+    display: none;
+}
+#general_list > article > a > div.article_bottom label {
+    display: block;
+    width: 24px; height: 24px;
+}
+#general_list > article > a > div.article_bottom label.likes_icon { background-image: url('../img/general/like_24.png'); }
+#general_list > article > a > div.article_bottom label.dislikes_icon { background-image: url('../img/general/dislike_24.png'); } 
+#general_list > article > a > div.article_bottom label.stranger_icon { background-image: url('../img/general/stranger_24.png'); } 
+
+#general_list > article > a > div.article_bottom label.detail {
+    width: auto; height: auto;
+    font-size: 0.8em;
+}
+
+#general_list > article > a > div.article_bottom label.detail[data-type=비추] {
+    margin-left: 4px;
+    margin-right: 8px;
+}
+#general_list > article > a > div.article_bottom label.detail[data-type=신고] {
+    margin-left: 3px;
+}
+
+#general_list > article > a > div.article_bottom > div.left > p  {
+    margin-left: 5px;
+    margin-right: 10px;
+
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#general_list > article > a > div.article_bottom > div.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+#general_list > article > a > div.article_bottom > div.right > img { display: block; }
+#general_list > article > a > div.article_bottom > div.right > img[data-type=image] { margin-right: 8px; }
+#general_list > article > a > div.article_bottom > div.right > img[data-type=comment] {
+    margin-left: 10px;
+    margin-right: 6px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------ */
+
+
+#general_list_nav {
+    overflow: hidden;
+
+    /* 중앙 정렬 */
+    width: 630px; margin: 0 auto; 
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#general_list_nav > a {
+    display: block; float: left;
+    width: 70px; height: 40px;
+    text-align: center; line-height: 40px;
+    border: 2px solid darkred;
+    border-radius: 15px;
+    color: darkred; font-weight: bold;
+}
+
+#general_list_nav > a.first { margin-right: 10px; }
+#general_list_nav > a.right { float: right; }
