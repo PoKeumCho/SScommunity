@@ -1,6 +1,9 @@
 # SScommunity   
 https://www.sscommu.com/   
 
+# Android App Version   
+https://github.com/PoKeumCho/SScommu.git   
+
 # Database   
 https://github.com/PoKeumCho/SScommuityDatabase   
 
@@ -79,9 +82,6 @@ https://youtu.be/oXoKc7i_lIc
     
 # Mobile Version
 https://youtu.be/vbeDIeFBT1s   
-
-# Android App Version   
-https://github.com/PoKeumCho/SScommu.git   
 
 - - -
 **References (참고자료)**    
